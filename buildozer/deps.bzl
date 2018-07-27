@@ -13,20 +13,20 @@ def buildozer_dependencies():
     _maybe(
         http_archive,
         name = "io_bazel",
-        sha256 = "66135f877d0cc075b683474c50b1f7c3e2749bf0a40e446f20392f44494fefff",
-        strip_prefix = "bazel-0.12.0",
+        sha256 = "a0333e7e8ce885f85f52bbb239e36810ac340c211c550d10c499f098a2e925a8",
+        strip_prefix = "bazel-0.15.2",
         urls = [
-            "http://mirror.bazel.build/github.com/bazelbuild/bazel/archive/0.12.0.tar.gz",
-            "https://github.com/bazelbuild/bazel/archive/0.12.0.tar.gz",
+            "http://mirror.bazel.build/github.com/bazelbuild/bazel/archive/0.15.2.tar.gz",
+            "https://github.com/bazelbuild/bazel/archive/0.15.2.tar.gz",
         ],
     )
 
     _maybe(
         http_archive,
         name = "com_github_bazelbuild_buildtools",
-        sha256 = "681130514b50ee640cd5eee9cbd192fd48072b4bc9abc6a17a1fba7a2817ec0e",
-        strip_prefix = "buildtools-5a4c4ca9753ad0f8f9eb3463d84bc89388846420",
-        urls = ["https://github.com/bazelbuild/buildtools/archive/5a4c4ca9753ad0f8f9eb3463d84bc89388846420.tar.gz"],
+        sha256 = "2f8df5baab5ed7d7aaa4c73a7789e468b675c344312cb03c3d9b677563cac535",
+        strip_prefix = "buildtools-c39a197f7d35aebb0e0b031d728fb918f73887d6",
+        urls = ["https://github.com/bazelbuild/buildtools/archive/c39a197f7d35aebb0e0b031d728fb918f73887d6.tar.gz"],
     )
 
 def _maybe(repo_rule, name, **kwargs):
